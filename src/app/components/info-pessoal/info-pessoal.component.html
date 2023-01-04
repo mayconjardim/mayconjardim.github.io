@@ -1,1 +1,22 @@
-<p>info-pessoal works!</p>
+<div class="info">
+  <h1 class="info-title">
+    <span>Informações Pessoais</span>
+  </h1>
+
+  <section class="info-section">
+    <div class="info-section-table">
+      <table>
+        <tbody>
+          <tr *ngFor="let row of data">
+            <td *ngFor="let col of row">{{ col }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="info-section-text">
+      <p *ngFor="let info of sobre">
+        {{ info }}
+      </p>
+    </div>
+  </section>
+</div>

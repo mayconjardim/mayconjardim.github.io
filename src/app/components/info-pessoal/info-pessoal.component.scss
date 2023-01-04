@@ -1,0 +1,49 @@
+@import "../../../assets/scss/variables.scss";
+:host {
+  display: block;
+  background-color: $background-color;
+  color: white;
+  padding: 1rem;
+}
+
+.info {
+  gap: 2rem;
+  display: grid;
+
+  &-section {
+    &-table {
+      table {
+        margin: 0 auto;
+        padding: 1rem;
+        font-size: 1.3rem;
+        outline: 1px solid white;
+
+        tr {
+          height: 40px;
+        }
+
+        tr td {
+          padding-left: 0.5rem;
+        }
+
+        tr td:nth-child(even) {
+          color: $primary-color;
+        }
+      }
+    }
+
+    &-text {
+      margin: 2rem auto;
+      padding: 1rem;
+      outline: 1px solid white;
+      p {
+        font-size: 1.2rem;
+        text-align: justify;
+      }
+
+      p:not(:first-child) {
+        margin-top: 1rem;
+      }
+    }
+  }
+}
