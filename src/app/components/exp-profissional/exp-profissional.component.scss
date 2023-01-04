@@ -1,0 +1,30 @@
+@import "../../../assets/scss/variables.scss";
+:host {
+  display: block;
+  background-color: $background-color;
+  color: white;
+  padding: 1rem;
+}
+
+.experience {
+  h1 {
+    padding: 1rem 5rem;
+  }
+
+  ul:has(ul) {
+    padding: 0.5rem;
+    list-style: none;
+  }
+
+  ul li:has(ul) {
+    margin-top: 2rem;
+  }
+
+  ul li h2 {
+    color: $primary-color;
+  }
+
+  ul li h4 {
+    color: $secondary-color;
+  }
+}

@@ -1,1 +1,14 @@
-<p>exp-profissional works!</p>
+<div class="experience">
+  <h1>Experiência Profissional</h1>
+
+  <ul>
+    <li *ngFor="let exp of expLista">
+      <h2>{{ exp.cargo }}</h2>
+      <h3>{{ exp.empresa }}</h3>
+      <h4>{{ exp.duracao }}</h4>
+      <ul>
+        <li *ngFor="let desc of exp.descricao">{{ desc }}</li>
+      </ul>
+    </li>
+  </ul>
+</div>
