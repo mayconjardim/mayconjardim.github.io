@@ -1,0 +1,22 @@
+@import "../../../assets/scss/variables.scss";
+:host {
+  display: block;
+  background-color: $background-color;
+  color: white;
+  padding: 1rem;
+}
+
+.education {
+  h1 {
+    padding: 1rem 5rem;
+  }
+
+  section {
+    padding: 2rem;
+    position: relative;
+
+    h2 {
+      color: $primary-color;
+    }
+  }
+}

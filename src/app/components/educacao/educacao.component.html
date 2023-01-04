@@ -1,1 +1,9 @@
-<p>educacao works!</p>
+<div class="education">
+  <h1>Cursos de Especialização</h1>
+
+  <section *ngFor="let cursos of cursosList">
+    <h2>{{ cursos.curso }}</h2>
+    <h3>{{ cursos.instituto }}</h3>
+    <h4>{{ cursos.termino }}</h4>
+  </section>
+</div>
