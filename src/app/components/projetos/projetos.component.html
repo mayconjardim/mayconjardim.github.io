@@ -3,7 +3,7 @@
   <div class="card-container">
     <div class="card" *ngFor="let projeto of projetos">
       <div class="card-header">
-        <a [href]="projeto.repo"><img [src]="projeto.img" alt="rover" /></a>
+        <img [src]="projeto.img" alt="rover" />
       </div>
       <div class="card-body">
         <span class="tecnologias">{{ projeto.tecnologias }}</span>
