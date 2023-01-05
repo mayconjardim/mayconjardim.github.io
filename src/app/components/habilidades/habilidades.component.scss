@@ -1,0 +1,28 @@
+@import "../../../assets/scss/variables.scss";
+:host {
+  display: block;
+  background-color: $background-color;
+  color: white;
+  padding: 1rem;
+}
+
+.habilidades {
+  h1 {
+    padding: 1rem 5rem;
+  }
+
+  section {
+    display: flex;
+    flex-wrap: wrap;
+
+    .tecnologias {
+      text-align: center;
+      margin: 2rem auto;
+
+      img {
+        width: 150px;
+        height: 150px;
+      }
+    }
+  }
+}

@@ -1,1 +1,10 @@
-<p>habilidades works!</p>
+<div class="habilidades">
+  <h1>Habilidades</h1>
+
+  <section>
+    <div class="tecnologias" *ngFor="let habilidade of habilidades">
+      <img [src]="habilidade.img" alt="tecnologia logo" />
+      <h2>{{ habilidade.nome }}</h2>
+    </div>
+  </section>
+</div>

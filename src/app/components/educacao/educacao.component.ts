@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Cursos } from 'src/app/models/cursos';
 
 @Component({
   selector: 'educacao',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class EducacaoComponent implements OnInit {
   ngOnInit(): void {}
 
-  cursosList: any[] = [
+  cursosList: Cursos[] = [
     {
       instituto: 'Algoritmos e Lógica de Programação',
       curso: 'Udemy & Nelio Alves',

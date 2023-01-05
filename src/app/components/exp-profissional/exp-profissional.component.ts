@@ -1,3 +1,4 @@
+import { Experiencias } from './../../models/experiencias';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,13 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./exp-profissional.component.scss'],
 })
 export class ExpProfissionalComponent implements OnInit {
-  expLista: any[] = [
+  expLista: Experiencias[] = [
     {
       cargo: 'Developer',
       empresa: 'Freelancer',
       duracao: 'Dez 2022 - Presente',
       descricao: [
-        'Desenvolvimento de aplicações Web Full Stack com as tecnologias Spring boot e Angular',
+        'Desenvolvimento de aplicações Web Full Stack com as tecnologias Spring boot e Angular.',
       ],
     },
     {
@@ -49,8 +50,6 @@ export class ExpProfissionalComponent implements OnInit {
         'Identificação e correção de problemas em aparelhos eletrônicos.',
       ],
     },
-
-    ,
   ];
 
   constructor() {}
