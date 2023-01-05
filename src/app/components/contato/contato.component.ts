@@ -1,15 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-contato',
+  selector: 'contato',
   templateUrl: './contato.component.html',
-  styleUrls: ['./contato.component.scss']
+  styleUrls: ['./contato.component.scss'],
 })
 export class ContatoComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
