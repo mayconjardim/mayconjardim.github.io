@@ -8,6 +8,7 @@ import { EducacaoComponent } from './components/educacao/educacao.component';
 import { ExpProfissionalComponent } from './components/exp-profissional/exp-profissional.component';
 import { HabilidadesComponent } from './components/habilidades/habilidades.component';
 import { ProjetosComponent } from './components/projetos/projetos.component';
+import { ContatoComponent } from './components/contato/contato.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ProjetosComponent } from './components/projetos/projetos.component';
     EducacaoComponent,
     ExpProfissionalComponent,
     HabilidadesComponent,
-    ProjetosComponent
+    ProjetosComponent,
+    ContatoComponent
   ],
   imports: [
     BrowserModule
