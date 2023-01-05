@@ -1,0 +1,25 @@
+<div class="projetos">
+  <h1>Projetos</h1>
+  <div class="card-container">
+    <div class="card" *ngFor="let projeto of projetos">
+      <div class="card-header">
+        <a [href]="projeto.repo"><img [src]="projeto.img" alt="rover" /></a>
+      </div>
+      <div class="card-body">
+        <span class="tecnologias">{{ projeto.tecnologias }}</span>
+        <h4>{{ projeto.titulo }}</h4>
+        <p>{{ projeto.descricao }}</p>
+      </div>
+      <ng-container *ngIf="projeto.repo">
+        <div class="card-git">
+          <a [href]="projeto.repo"
+            ><img src="assets/tecnologias/github.svg" alt="github logo"
+          /></a>
+          <a [href]="projeto.link"
+            ><img src="assets/images/website.svg" alt="website link"
+          /></a>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</div>
