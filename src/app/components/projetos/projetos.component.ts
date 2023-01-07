@@ -28,6 +28,16 @@ export class ProjetosComponent implements OnInit {
           'por meio de usuário e senha individual, gerenciar e acompanhar a movimentação de processos internos.',
       ],
     },
+    {
+      titulo: 'Donuts',
+      tecnologias: 'Angular',
+      img: 'assets/projetos/donuts.png',
+      repo: 'https://github.com/mayconjardim/donuts',
+      link: 'https://donuts-iota.vercel.app/admin/donuts',
+      descricao: [
+        'CRUD feito em Angular, projeto para aprender alguns conceitos do angular',
+      ],
+    },
   ];
   constructor() {}
 
